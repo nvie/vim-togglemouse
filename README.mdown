@@ -1,3 +1,6 @@
+vim-togglemouse ![Project status](http://stillmaintained.com/nvie/vim-togglemouse.png)
+===============
+
 Installation
 ------------
 1. Copy the file `plugin/toggle_mouse.vim` to your `~/.vim/plugin` directory
