@@ -17,6 +17,6 @@ Toggling restores the Vim 'mouse' option value to its previous value.
 
 Customization
 -------------
-If you don't want to use the `<F12>` key for mouse toggling, simply remap it to
+If you don't want to use the `<F12>` key for mouse toggling, remap it to
 another key.  It autodetects whether it has been remapped and won't register
 the `<F12>` key if so.
