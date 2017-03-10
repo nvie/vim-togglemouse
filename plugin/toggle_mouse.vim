@@ -25,12 +25,15 @@ fun! s:ToggleMouse()
     endif
 endfunction
 
+" Create a global mapping, to facilitate user-specific mappings
+noremap <unique> <Plug>ToggleMouse :call <SID>ToggleMouse()<CR>
+
 " Add mappings, unless the user didn't want this.
 " The default mapping is registered under to <F12> by default, unless the user
 " remapped it already (or a mapping exists already for <F12>)
 if !exists("no_plugin_maps") && !exists("no_toggle_mouse_maps")
-    if !hasmapto('<SID>ToggleMouse()')
-        noremap <F12> :call <SID>ToggleMouse()<CR>
-        inoremap <F12> <Esc>:call <SID>ToggleMouse()<CR>a
+    if !hasmapto('<Plug>ToggleMouse')
+        map <F12> <Plug>ToggleMouse
+        imap <F12> <Esc> <Plug>ToggleMouse a
     endif
 endif
