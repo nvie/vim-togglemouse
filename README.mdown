@@ -20,3 +20,10 @@ Customization
 If you don't want to use the `<F12>` key for mouse toggling, remap it to
 another key.  It autodetects whether it has been remapped and won't register
 the `<F12>` key if so.
+
+To remap the toggle to another key, add a command such as the following
+example to your vim configuration file :
+```
+map <C-m> <Plug>ToggleMouse
+```
+This will map the toggle to CTRL-m.
