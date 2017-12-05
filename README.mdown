@@ -10,9 +10,11 @@ Installation
 Usage
 -----
 Press `<F12>` to toggle mouse focus between Vim and your terminal emulator,
-allowing terminal emulator mouse commands, like copy/paste.
+allowing terminal emulator mouse commands, like copy/paste. `<F12>` also
+removes line numbers for easy copying.
 
-Toggling restores the Vim 'mouse' option value to its previous value.
+Toggling restores the Vim 'mouse' option value to its previous value. Line
+number settings are also restored.
 
 
 Customization

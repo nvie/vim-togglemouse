@@ -17,10 +17,16 @@ fun! s:ToggleMouse()
 
     if &mouse == ""
         let &mouse = s:old_mouse
+        let &number = s:old_number
+        let &relativenumber = s:old_relativenumber
         echo "Mouse is for Vim (" . &mouse . ")"
     else
         let s:old_mouse = &mouse
-        let &mouse=""
+        let &mouse = ""
+        let s:old_number = &number
+        let s:old_relativenumber = &relativenumber
+        set nonumber
+        set norelativenumber
         echo "Mouse is for terminal"
     endif
 endfunction
